@@ -25,3 +25,6 @@ Let’s assume that A and B are two locations within the densely populated mains
 This extra meaningless effort not only wastes time and energy, it also increases physical traffic which is another issue. However, due to the nature and quantity of our population, at any given time, the probability of a random person moving from a location, A to another location, B is quite decent. It would be very convenient for this person to cooperate as he has to make the trip from A to B anyway. In such a scenario, people would only be making optimal number of trips, getting rid of unnecessary trips, reducing traffic, effort and saving time in the process. Such a form of cooperation is what eechelon.com is based on. 
 <br><br>
 This is where we come in and utilize current technology, mainly the web and a mobile device to ease some of these hassles of everyday life. The app will be called eechelon and we hope that it would catch on with the users quickly. And that the meaning is simply to be coordinated, and hence the project’s name: Coordinated Delivery System or CDS for short.
+
+<br><br><br>
+<b>Feel free to contact me on telegram: @R3tr0B0x</b>
