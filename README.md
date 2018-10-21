@@ -28,3 +28,7 @@ This is where we come in and utilize current technology, mainly the web and a mo
 
 <br><br><br>
 <b>Feel free to contact me on telegram: @R3tr0B0x</b>
+<br><br>
+Read the documentation pdf to get a better insight about the project. <br><br>
+Thanks for visiting :)
+<br> <br>
