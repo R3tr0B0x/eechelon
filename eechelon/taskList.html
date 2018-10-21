@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://localhost/eechelon/taskList.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link href="./taskList_files/css" rel="stylesheet" type="text/css">
+<link href="./taskList_files/css(1)" rel="stylesheet" type="text/css">
+    
+<title>Task List</title>
+
+<link rel="stylesheet" type="text/css" href="./taskList_files/style.css">
+<link rel="stylesheet" type="text/css" href="./taskList_files/skin.css">
+<link rel="stylesheet" type="text/css" href="./taskList_files/framework.css">
+<link rel="stylesheet" type="text/css" href="./taskList_files/font-awesome.css">
+    
+<script type="text/javascript" src="./taskList_files/jquery.js.download"></script><style></style>
+<script type="text/javascript" src="./taskList_files/plugins.js.download"></script>
+<script type="text/javascript" src="./taskList_files/custom.js.download"></script>
+</head>
+
+<body>
+<div id="page-transitions">
+    
+<div class="page-preloader page-preloader-dark">
+    <img class="page-preload" src="./taskList_files/preload.gif">
+</div>
+    
+
+            
+<div id="page-content" class="page-content header-clear fadeIn show-containers">
+    <div id="page-content-scroll" style="right: 0px;">
+        
+        <div class="heading-strip bg-1">
+            <h3>Tasklists</h3>
+            <p>Current Job</p>
+            <i class="fa fa-check-circle"></i>
+            <div class="overlay dark-overlay"></div>
+        </div>
+        <div class="decoration decoration-margins"></div>
+
+        <div class="content no-bottom material-full-top">
+            <div class="container no-bottom">
+                <div class="one-half-responsive">
+                    <a href="http://localhost/eechelon/taskList.html#" onclick="tasklistUpdate(&#39;c&#39;);" class="tasklist-item tasklist-red tasklist-completed">
+                        <i class="fa fa-check"></i>
+                        <h5>Accepted Job</h5>
+                    </a>                    
+                    <a id="1" href="http://localhost/eechelon/taskList.html#" onclick="tasklistUpdate(&#39;e&#39;);" class="tasklist-item tasklist-green">
+                        <i class="fa fa-check"></i>
+                        <h5>Item Purchased/Picked Up</h5>
+                    </a>                    
+                    <a id="2" href="http://localhost/eechelon/taskList.html#" onclick="tasklistUpdate(&#39;g&#39;);" class="tasklist-item tasklist-blue tasklist-completed">
+                        <i class="fa fa-check"></i>
+                        <h5>Deliveried</h5>
+                    </a>
+                    <a id="3" href="http://localhost/eechelon/taskList.html#" onclick="tastlistUpdate();" class="tasklist-item tasklist-dark tasklist-completed">
+                        <i class="fa fa-check"></i>
+                        <h5>Job Complete</h5>
+                    </a>
+                    <div class="decoration"></div>
+                </div>
+            </div>
+        </div>
+        <a href="http://localhost/eechelon/taskList.html#" class="button button-round button-red">Cancel</a>
+        <div class="decoration decoration-margins"></div>
+    </div>  
+</div>
+
+<script type="text/javascript">
+
+    var jobID= <?php echo something?>;
+    var currentStatus= <?php echo something?>;
+    function acceptedJob(status){
+		$.ajax({
+            type: "POST",
+            url: "taskUpdate.php",
+            data: "jobID="+jobID+"&status="+status,
+            error: function(){
+                return;
+            },
+            success: function(output){
+                return;
+            }
+
+    	}, timeout: 10000
+	});
+
+    
+</script>
+    
+</div>
+<div class="share-bottom-tap-close"></div></body></html>

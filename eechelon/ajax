@@ -1,0 +1,18 @@
+                <script type="text/javascript">
+                $.ajax({
+                    type: "POST",
+                    url: "asdasd.php",
+                    data: "jobID=123123&status=c",
+                    error: function(){
+                       
+                        return;
+                    },
+                    success: function(output){
+                       
+                        output;
+                         
+                        }
+
+                    }, timeout: 10000
+                });
+			</script>
